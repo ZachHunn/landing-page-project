@@ -1,0 +1,40 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header,
+.footer {
+    background-color: #1f2937;
+    color: white;
+}
+
+.section-one {
+   background-color: #1f2937;
+   color: white; 
+}
+
+.section-two {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-two-content {
+    display: flex;
+}
