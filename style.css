@@ -12,29 +12,29 @@ body {
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-ul {
+.header-content nav ul {
     list-style: none;
     display: flex;
     gap: 16px;
 }
 
-a {
+.header-content nav a {
     text-decoration: none;
     color: white;
 }
 
-.s1-h2 {
+s1-left-content h2 {
     font-size: 48px;
     font-weight: bolder;
 }
 
-.s1-p {
+s1-left-content p {
     font-size: 18px;
     color: #e5e7eb;
 }
 
-.header,
-.footer {
+header,
+footer {
     background-color: #1f2937;
     color: white;
     display: flex;

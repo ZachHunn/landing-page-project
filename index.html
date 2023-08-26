@@ -7,27 +7,32 @@
     <title>Jack's Landing Page</title>
 </head>
 <body>
-    <div class="header">
+<script>
+    const today = new Date()
+</script>
+    <header>
         <div class="header-content">
-            <h3>Header Title</h3>
+          <h3>Header Title</h3>
+          <nav>
             <ul>
              <li><a href="#">Link 1</a></li>
              <li><a href="#">Link 2</a></li>
              <li><a href="#">Link 3</a></li>
             </ul>
+          </nav>
         </div>
-    </div>
-    <div class="section-one">
+    </header>
+    <section class="section-one">
         <div class="section-one-content">
             <div class="s1-left-content">
-                <h2 class="s1-h2">This website is awesome</h2>
-                <p class="s1-p">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
+                <h2>This website is awesome</h2>
+                <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
                 <button class="first-signup">Sign up</button>
             </div>
             <img src="images/wolflogo.png" class="wolflogo">
         </div>
-    </div>
-    <div class="section-two">
+    </section>
+    <section class="section-two">
         <div class="section-two-content">
             <h2 class="s2-h2">Some random information.</h2>
                 <div class="s2-logo-layout">
@@ -49,8 +54,8 @@
                  </div>
                 </div>
         </div>
-    </div>
-    <div class="section-three">
+    </section>
+    <section class="section-three">
         <div class="section-three-content">
             <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's 
             just filling up space, or maybe people will atually read it. Who knows? 
@@ -58,8 +63,8 @@
             </p>
             <p class="s3-quote">-Thor, God of Thunder</p>
         </div>
-    </div>
-    <div class="section-four">
+    </section>
+    <section class="section-four">
         <div class="section-four-content">
             <div class="banner">
                 <div class="banner-content">
@@ -73,11 +78,12 @@
                 </div>
              </div>
             </div>
-        </div> 
-    </div>
-    <div class="footer">
-        <p>Copyright @ The Jackson Project 2023</p>
-    </div>
-
+        </section>
+    <footer>
+        <p>Copyright &copy; <span id='footer-date'></span> The Jackson Project </p>
+    </footer>
+    <script>
+        document.getElementById('footer-date').textContent = today.getFullYear()
+    </script>
 </body>
 </html>
